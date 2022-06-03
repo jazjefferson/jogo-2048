@@ -39,7 +39,12 @@ function moveParaDireita(){
 	
 	for(let linha = 0; linha < 4; linha++){
 		for(let coluna = 0; coluna < 4; coluna++){
-			matrizInvertida[coluna][linha] = matriz[linha][coluna];
+			matrizInvertida[coluna][linha] = 0;
+		}
+	}
+	for(let linha = 0; linha < 4; linha++){
+		for(let coluna = 0; coluna < 4; coluna++){
+			matrizInvertida[linha][coluna] = matriz[linha][coluna];
 		}
 	}
 	console.log(matrizInvertida);
